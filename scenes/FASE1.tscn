@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://b03ngnkhsdp6k"]
 
 [ext_resource type="Texture2D" uid="uid://8lwmbqr3n6nv" path="res://cenario/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="1_7jtau"]
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_k2es2"]
+[ext_resource type="Script" uid="uid://qtr1w3tm3hfg" path="res://scripts/game_manager.gd" id="1_k2es2"]
 [ext_resource type="Texture2D" uid="uid://uapn6782gojr" path="res://assets/Free/Terrain/Terrain (16x16).png" id="2_iwvwf"]
 [ext_resource type="Texture2D" uid="uid://bhkkrhan5ubf6" path="res://cenario/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="2_vas56"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://scenes/player.tscn" id="3_j7uho"]
@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bgv5v2fxqlswe" path="res://scenes/platform.tscn" id="6_s04tj"]
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="7_ephrs"]
 [ext_resource type="PackedScene" uid="uid://d2w2i5h0lhc6l" path="res://scenes/slime.tscn" id="8_mxlt4"]
-[ext_resource type="Script" path="res://scripts/Camera2D.gd" id="9_wvcxq"]
+[ext_resource type="Script" uid="uid://csfjxkts6087e" path="res://scripts/Camera2D.gd" id="9_wvcxq"]
 [ext_resource type="PackedScene" uid="uid://e264k7dbywou" path="res://scenes/hud.tscn" id="10_yhgob"]
 [ext_resource type="PackedScene" uid="uid://cee3dkvkgbs2f" path="res://scenes/door.tscn" id="11_awo7k"]
 [ext_resource type="PackedScene" uid="uid://cknkocd81sric" path="res://scenes/FASE2.tscn" id="13_k0pir"]
@@ -231,6 +231,7 @@ texture = ExtResource("2_vas56")
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_k2es2")
+objetivo = 9
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_cipct")

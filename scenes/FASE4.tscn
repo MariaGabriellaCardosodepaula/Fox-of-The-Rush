@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://e3va1iywvnju"]
 
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="4_qpl6n"]
+[ext_resource type="Script" uid="uid://qtr1w3tm3hfg" path="res://scripts/game_manager.gd" id="4_qpl6n"]
 [ext_resource type="Texture2D" uid="uid://uapn6782gojr" path="res://assets/Free/Terrain/Terrain (16x16).png" id="5_awme3"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://scenes/player.tscn" id="6_co21f"]
 [ext_resource type="PackedScene" uid="uid://dtrbka1ef726o" path="res://scenes/killzone.tscn" id="7_n5c04"]
@@ -8,7 +8,7 @@
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="9_w6cxj"]
 [ext_resource type="PackedScene" uid="uid://d2w2i5h0lhc6l" path="res://scenes/slime.tscn" id="10_1ymot"]
 [ext_resource type="PackedScene" uid="uid://clg8jxvgmatyd" path="res://scenes/FASE5.tscn" id="11_ndvip"]
-[ext_resource type="Script" path="res://scripts/Camera2D.gd" id="11_uf0k0"]
+[ext_resource type="Script" uid="uid://csfjxkts6087e" path="res://scripts/Camera2D.gd" id="11_uf0k0"]
 [ext_resource type="PackedScene" uid="uid://e264k7dbywou" path="res://scenes/hud.tscn" id="12_t1y40"]
 [ext_resource type="PackedScene" uid="uid://cee3dkvkgbs2f" path="res://scenes/door.tscn" id="13_h5fab"]
 [ext_resource type="PackedScene" uid="uid://dp18sl1moehdt" path="res://scenes/pause_menu.tscn" id="15_5wxut"]
@@ -274,6 +274,7 @@ scale = Vector2(3.81944, 3.81944)
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("4_qpl6n")
+objetivo = 11
 
 [node name="TileMap2" type="TileMap" parent="."]
 position = Vector2(3, 0)
