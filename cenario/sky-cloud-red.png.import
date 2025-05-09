@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf7e8fyhroe0t"
-path="res://.godot/imported/Blink (54x52).png-14858a696f3736e2adec05cdb2db11ec.ctex"
+uid="uid://dtb6xpj2mjoci"
+path="res://.godot/imported/sky-cloud-red.png-3a44b81759b607186b16ecbcf6c9ef79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Free/Traps/Spike Head/Blink (54x52).png"
-dest_files=["res://.godot/imported/Blink (54x52).png-14858a696f3736e2adec05cdb2db11ec.ctex"]
+source_file="res://cenario/sky-cloud-red.png"
+dest_files=["res://.godot/imported/sky-cloud-red.png-3a44b81759b607186b16ecbcf6c9ef79.ctex"]
 
 [params]
 
