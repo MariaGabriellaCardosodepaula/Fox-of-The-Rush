@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://e3va1iywvnju"]
+[gd_scene load_steps=20 format=3 uid="uid://e3va1iywvnju"]
 
-[ext_resource type="Script" uid="uid://qtr1w3tm3hfg" path="res://scripts/game_manager.gd" id="4_qpl6n"]
+[ext_resource type="Texture2D" uid="uid://cheiovu6alyii" path="res://cenario/ChatGPT Image 13 de mai. de 2025, 15_55_44.png" id="1_g1r1w"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="4_qpl6n"]
 [ext_resource type="Texture2D" uid="uid://uapn6782gojr" path="res://assets/Free/Terrain/Terrain (16x16).png" id="5_awme3"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://scenes/player.tscn" id="6_co21f"]
 [ext_resource type="PackedScene" uid="uid://dtrbka1ef726o" path="res://scenes/killzone.tscn" id="7_n5c04"]
@@ -8,7 +9,7 @@
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="9_w6cxj"]
 [ext_resource type="PackedScene" uid="uid://d2w2i5h0lhc6l" path="res://scenes/slime.tscn" id="10_1ymot"]
 [ext_resource type="PackedScene" uid="uid://clg8jxvgmatyd" path="res://scenes/FASE5.tscn" id="11_ndvip"]
-[ext_resource type="Script" uid="uid://csfjxkts6087e" path="res://scripts/Camera2D.gd" id="11_uf0k0"]
+[ext_resource type="Script" path="res://scripts/Camera2D.gd" id="11_uf0k0"]
 [ext_resource type="PackedScene" uid="uid://e264k7dbywou" path="res://scenes/hud.tscn" id="12_t1y40"]
 [ext_resource type="PackedScene" uid="uid://cee3dkvkgbs2f" path="res://scenes/door.tscn" id="13_h5fab"]
 [ext_resource type="PackedScene" uid="uid://dp18sl1moehdt" path="res://scenes/pause_menu.tscn" id="15_5wxut"]
@@ -259,17 +260,12 @@ size = Vector2(45, 534)
 [node name="Tutorial" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-704.0, 1695.0, -707.0, 1697.0]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-540, -275)
-scale = Vector2(3.81944, 3.81944)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(-537, -281)
-scale = Vector2(3.81944, 3.81944)
-
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(-516, -440)
-scale = Vector2(3.81944, 3.81944)
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(854.917, 328.5)
+scale = Vector2(1.14334, 0.674805)
+texture = ExtResource("1_g1r1w")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -324,28 +320,28 @@ text = "Space to jump."
 horizontal_alignment = 1
 
 [node name="Slime" parent="." instance=ExtResource("10_1ymot")]
-position = Vector2(-807, -369)
+position = Vector2(-807, -367)
 
 [node name="Slime2" parent="." instance=ExtResource("10_1ymot")]
 position = Vector2(-26, -191)
 
 [node name="Slime8" parent="." instance=ExtResource("10_1ymot")]
-position = Vector2(-84, -450)
+position = Vector2(-84, -448)
 
 [node name="Slime7" parent="." instance=ExtResource("10_1ymot")]
-position = Vector2(-389, -449)
+position = Vector2(-390, -448)
 
 [node name="Slime4" parent="." instance=ExtResource("10_1ymot")]
-position = Vector2(-869, -626)
+position = Vector2(-869, -624)
 
 [node name="Slime9" parent="." instance=ExtResource("10_1ymot")]
-position = Vector2(-707, -627)
+position = Vector2(-707, -624)
 
 [node name="Slime5" parent="." instance=ExtResource("10_1ymot")]
 position = Vector2(-930, -192)
 
 [node name="Slime6" parent="." instance=ExtResource("10_1ymot")]
-position = Vector2(-421, -113)
+position = Vector2(-421, -112)
 
 [node name="Parede" type="StaticBody2D" parent="."]
 position = Vector2(-292, 13)
@@ -380,25 +376,25 @@ destino = ExtResource("11_ndvip")
 [node name="Coins" type="Node" parent="."]
 
 [node name="Coin4" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(-243, -455)
+position = Vector2(-242, -459)
 
 [node name="Coin12" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(49, -196)
+position = Vector2(51, -201)
 
 [node name="Coin16" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(211, -334)
+position = Vector2(212, -338)
 
 [node name="Coin6" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(-985, -630)
+position = Vector2(-978, -632)
 
 [node name="Coin8" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(51, -451)
+position = Vector2(50, -457)
 
 [node name="Coin10" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(-499, -454)
+position = Vector2(-497, -457)
 
 [node name="Coin13" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(-370, -118)
+position = Vector2(-369, -120)
 
 [node name="Coin14" parent="Coins" instance=ExtResource("16_appxr")]
 position = Vector2(-904, -391)
@@ -407,7 +403,7 @@ position = Vector2(-904, -391)
 position = Vector2(-1136, -550)
 
 [node name="Coin18" parent="Coins" instance=ExtResource("16_appxr")]
-position = Vector2(-600, -629)
+position = Vector2(-602, -632)
 
 [node name="Coin11" parent="Coins" instance=ExtResource("16_appxr")]
 position = Vector2(-961, -303)

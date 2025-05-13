@@ -1,14 +1,14 @@
 [gd_scene load_steps=21 format=3 uid="uid://c6ab4s8jih6v2"]
 
-[ext_resource type="Texture2D" uid="uid://qvdak2t3usdw" path="res://cenario/Reference-Image.png" id="1_pi0pv"]
-[ext_resource type="Script" uid="uid://qtr1w3tm3hfg" path="res://scripts/game_manager.gd" id="4_jde8g"]
+[ext_resource type="Texture2D" uid="uid://j2efqv58kjqp" path="res://cenario/11153437-fundo-de-nivel-de-jogo-de-8-bits-de-paisagem-de-deserto-de-pixel-vetor.jpg" id="1_w0fdm"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="4_jde8g"]
 [ext_resource type="Texture2D" uid="uid://uapn6782gojr" path="res://assets/Free/Terrain/Terrain (16x16).png" id="5_ftwk1"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://scenes/player.tscn" id="6_2aypa"]
 [ext_resource type="PackedScene" uid="uid://dtrbka1ef726o" path="res://scenes/killzone.tscn" id="7_frqgl"]
 [ext_resource type="PackedScene" uid="uid://2hm82hsyulv8" path="res://scenes/platformf_3.tscn" id="8_xsu64"]
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="9_qni83"]
 [ext_resource type="PackedScene" uid="uid://d2w2i5h0lhc6l" path="res://scenes/slime.tscn" id="10_j1ufk"]
-[ext_resource type="Script" uid="uid://csfjxkts6087e" path="res://scripts/Camera2D.gd" id="11_al7ac"]
+[ext_resource type="Script" path="res://scripts/Camera2D.gd" id="11_al7ac"]
 [ext_resource type="PackedScene" uid="uid://e3va1iywvnju" path="res://scenes/FASE4.tscn" id="12_cyt4i"]
 [ext_resource type="PackedScene" uid="uid://e264k7dbywou" path="res://scenes/hud.tscn" id="12_oyoym"]
 [ext_resource type="PackedScene" uid="uid://cee3dkvkgbs2f" path="res://scenes/door.tscn" id="13_ystjo"]
@@ -246,20 +246,17 @@ size = Vector2(45, 534)
 position = Vector2(51, 0)
 metadata/_edit_vertical_guides_ = [-704.0, 1695.0, -707.0, 1697.0]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-1148, -675)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(730.125, 459)
-scale = Vector2(0.827146, 0.887037)
-texture = ExtResource("1_pi0pv")
-
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("4_jde8g")
 objetivo = 11
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(573, 324.5)
+scale = Vector2(0.816384, 0.668367)
+texture = ExtResource("1_w0fdm")
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_keshn")

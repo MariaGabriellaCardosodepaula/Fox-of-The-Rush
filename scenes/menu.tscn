@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cayxes377f026"]
 
-[ext_resource type="Texture2D" uid="uid://c5awqn8i7x2xf" path="res://cenario/pixilart-drawing (2).png" id="1_kka2y"]
 [ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_qeleq"]
 [ext_resource type="Script" path="res://scenes/menu.gd" id="2_4ag6s"]
+[ext_resource type="Texture2D" uid="uid://beotlc7u8nerl" path="res://cenario/1.png" id="3_j0cg6"]
 
 [sub_resource type="Theme" id="Theme_73gj2"]
 Button/fonts/font = ExtResource("1_qeleq")
@@ -16,9 +16,9 @@ theme = SubResource("Theme_73gj2")
 script = ExtResource("2_4ag6s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 323)
-scale = Vector2(4.5, 4.5)
-texture = ExtResource("1_kka2y")
+position = Vector2(577.625, 328.192)
+scale = Vector2(0.602474, 0.603348)
+texture = ExtResource("3_j0cg6")
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 0

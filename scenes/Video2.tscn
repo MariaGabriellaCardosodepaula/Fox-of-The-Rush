@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci4k2md7wvgc6"]
+
+[ext_resource type="VideoStream" path="res://assets/Video/WhatsApp-Video-2025-05-11-at-17.28.31.ogv" id="1_xbx56"]
+
+[node name="VideoStreamPlayer1" type="VideoStreamPlayer"]
+offset_right = 1152.0
+offset_bottom = 648.0
+stream = ExtResource("1_xbx56")
+autoplay = true
+expand = true
+
+[connection signal="finished" from="." to="." method="_on_finished"]

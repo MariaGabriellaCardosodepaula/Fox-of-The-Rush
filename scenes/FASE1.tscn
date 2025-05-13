@@ -218,14 +218,16 @@ size = Vector2(7, 534)
 [node name="Tutorial" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-704.0, 1695.0, -707.0, 1697.0]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-537, -281)
-scale = Vector2(3.81944, 3.81944)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(584.5, 322.5)
+scale = Vector2(2.07465, 2.10185)
 texture = ExtResource("1_7jtau")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(-537, -281)
-scale = Vector2(3.81944, 3.81944)
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(584.5, 326)
+scale = Vector2(2.06771, 2.07407)
 texture = ExtResource("2_vas56")
 
 [node name="GameManager" type="Node" parent="."]
