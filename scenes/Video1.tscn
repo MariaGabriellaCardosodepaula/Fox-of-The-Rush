@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ctcyctfu4rdry"]
 
-[ext_resource type="VideoStream" path="res://assets/Video/video1.ogv" id="1_im42d"]
-[ext_resource type="Script" path="res://video_1.gd" id="2_j0dfb"]
+[ext_resource type="VideoStream" uid="uid://dc5o26arfoae" path="res://assets/Video/video1.ogv" id="1_im42d"]
+[ext_resource type="Script" uid="uid://c5xjgmr2u27gc" path="res://video_1.gd" id="2_j0dfb"]
 
 [node name="VideoStreamPlayer1" type="VideoStreamPlayer"]
 offset_right = 1152.0

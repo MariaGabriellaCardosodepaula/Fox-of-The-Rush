@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cee3dkvkgbs2f"]
 
-[ext_resource type="Script" path="res://scripts/door.gd" id="1_s605o"]
+[ext_resource type="Script" uid="uid://b0bw3g72bjvyd" path="res://scripts/door.gd" id="1_s605o"]
 [ext_resource type="Texture2D" uid="uid://dr1cx5ibjy0l8" path="res://cenario/41844718-removebg-preview.png" id="2_8am82"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vjeds"]

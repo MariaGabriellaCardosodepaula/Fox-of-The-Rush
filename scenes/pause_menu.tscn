@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dp18sl1moehdt"]
 
-[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_0vb2g"]
+[ext_resource type="Script" uid="uid://dgky5vg0ubrml" path="res://scripts/pause_menu.gd" id="1_0vb2g"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_qv6bw"]
 action = &"ui_cancel"
